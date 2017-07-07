@@ -5,4 +5,4 @@ php:
   - '7.1'
 script:
 - composer install
-- phpunit test/twig-static-test.php
+- php vendor/bin/phpunit test/twig-static-test.php
