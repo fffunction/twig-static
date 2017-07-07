@@ -1,4 +1,8 @@
 language: php
+php:
+  - 7.0
+  - 7.1
+  - nightly
 script:
 - composer install
 - php vendor/bin/phpunit test/twig-static-test.php
