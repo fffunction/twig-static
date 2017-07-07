@@ -1,6 +1,10 @@
 # twig-static
 [![Build Status](https://travis-ci.org/fffunction/twig-static.svg?branch=master)](https://travis-ci.org/fffunction/twig-static)
 
+```
+composer require fffunction/twig-static
+```
+
 ## Usage
 
 Add the filter to Twig:
