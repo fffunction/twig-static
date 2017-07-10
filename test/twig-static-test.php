@@ -3,8 +3,6 @@ require_once __DIR__ . '/../vendor/autoload.php';
 
 use PHPUnit\Framework\TestCase;
 
-echo getcwd();
-
 final class TwigStaticTest extends TestCase {
 	public function testCreateStaticFilterIsDefined() {
 		$this->assertTrue(
