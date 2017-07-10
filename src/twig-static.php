@@ -33,6 +33,9 @@ function create_static_filter($asset_root, $asset_url) {
             error_log("Couldn't find \"$filename\" in \"$asset_root\"");
             return $asset_url . $filename;
         }
+        // We're using crc32 which gives a short hash with a low enough number of
+        // hashes per site that we shouldn't expect a collision. Example output: 3d653119
+        // To get a list of usable algorithms with example output see: https://gist.github.com/anonymous/055b1d8779ce71d2556dbb96df94d6af
         $hash = hash_file('crc32', $fullpath);
         return $asset_url . $filename . '?v=' . $hash;
     };
